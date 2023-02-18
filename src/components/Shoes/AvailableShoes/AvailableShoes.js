@@ -19,7 +19,7 @@ const DUMMY_SHOES = [
   
 const AvailableShoes = () =>
 {
-    const shoes = DUMMY_SHOES.map((item) => <ShoeItem key={item.id} name={item.name} price={item.price} description={item.description}></ShoeItem>);
+    const shoes = DUMMY_SHOES.map((item) => <ShoeItem key={item.id} id={item.id} name={item.name} price={item.price} description={item.description}></ShoeItem>);
     return(
         <section className={classes.shoes}>
             <Card>
